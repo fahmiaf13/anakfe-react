@@ -22,14 +22,14 @@ export default function Home() {
     animationData: maintenance,
     loop: true,
     style: {
-      width: "600px",
+      // width: "400px",
     },
   };
   return (
-    <main className="container mx-auto flex justify-center items-center h-screen">
-      <div className="w-[800px] flex flex-col">
+    <main className="container mx-auto w-full flex justify-center items-center h-screen">
+      <div className="sm-w-3/12 md:w-full flex flex-col">
         <Lottie {...options} />
-        <div className="text-center text-2xl font-bold">Website currently under construction</div>
+        <div className="text-xl sm:text-2xl md:text-4xl text-center font-bold">Website currently under construction</div>
       </div>
     </main>
   );
